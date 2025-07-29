@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.screen {
+    width: 80%;
+    height: 70vh;
+    background-color: #2d2d2d;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.message {
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+}
+
+/* Controls aligned at the bottom of .screen */
+.controls {
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    margin-top: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.speed {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+}
